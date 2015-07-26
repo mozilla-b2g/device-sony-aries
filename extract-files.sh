@@ -19,3 +19,27 @@ MANUFACTURER=sony
 
 . ../shinano/extract-files.sh
 
+COMMON_FIRMWARE="
+	modem.b00
+	modem.b01
+	modem.b02
+	modem.b03
+	modem.b06
+	modem.b08
+	modem.b09
+	modem.b11
+	modem.b12
+	modem.b13
+	modem.b14
+	modem.b15
+	modem.b16
+	modem.b17
+	modem.b18
+	modem.b19
+	modem.b22
+	modem.b23
+	modem.b24
+	modem.b25
+	modem.mdt
+	"
+copy_files "$COMMON_FIRMWARE" "system/etc/firmware" "etc/firmware"
