@@ -21,4 +21,7 @@ PRODUCT_MODEL := Xperia Z3 Compact (B2G)
 GAIA_DEV_PIXELS_PER_PX := 2.25
 BOOTANIMATION_ASSET_SIZE := 720p
 
+PRODUCT_COPY_FILES += \
+    device/sony/aries/bootrec-device:root/sbin/bootrec-device
+
 $(call inherit-product-if-exists, vendor/sony/aries-blobs/aries-vendor-blobs.mk)
