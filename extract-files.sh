@@ -16,8 +16,9 @@
 
 DEVICE=aries
 MANUFACTURER=sony
+STOCK=23.4.A.1.264
 
-. ../shinano/extract-files.sh
+. ../common/extract-files.sh
 
 COMMON_FIRMWARE="
 	modem.b00
