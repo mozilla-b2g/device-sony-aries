@@ -24,4 +24,7 @@ BOOTANIMATION_ASSET_SIZE := 720p
 PRODUCT_COPY_FILES += \
     device/sony/aries/bootrec-device:root/sbin/bootrec-device
 
+# Build Gecko with gcc-4.9
+GECKO_TOOLS_PREFIX = prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+
 $(call inherit-product-if-exists, vendor/sony/aries-blobs/aries-vendor-blobs.mk)
